@@ -15,6 +15,10 @@
 # Common path
 COMMON_PATH := device/sony/common
 
+# Dynamic partitions (retrofit)
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 ifneq ($(filter 4.19, $(SOMC_KERNEL_VERSION)),)
 display_platform := sm8250
 ipa_platform := data-ipacfg-mgr-legacy
